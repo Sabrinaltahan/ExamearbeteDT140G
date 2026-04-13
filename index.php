@@ -59,6 +59,54 @@
 
 
 
+   <!-- Recent Projects -->
+  <section class="recent-projects-modern" id="projects">
+    <div class="projects-wrapper">
+      <button class="scroll-btn left" id="scrollLeft">&#10094;</button>
+
+      <div class="projects-row" id="projectsRow">
+        <a href="project-details.php?id=1" class="project-modern-card scroll-animate">
+          <img src="assets/images/project1.jpg" alt="Modern Kitchen">
+          <div class="project-modern-overlay">
+            <h3>Modern Kitchen</h3>
+          </div>
+        </a>
+
+        <a href="project-details.php?id=2" class="project-modern-card scroll-animate">
+          <img src="assets/images/project2.jpg" alt="Bedroom Interior">
+          <div class="project-modern-overlay">
+            <h3>Bedroom Interior</h3>
+          </div>
+        </a>
+
+        <a href="project-details.php?id=3" class="project-modern-card scroll-animate">
+          <img src="assets/images/project3.jpg" alt="Office Solutions">
+          <div class="project-modern-overlay">
+            <h3>Office Solutions</h3>
+          </div>
+        </a>
+
+        <a href="project-details.php?id=4" class="project-modern-card scroll-animate">
+          <img src="assets/images/project4.jpg" alt="CNC Design">
+          <div class="project-modern-overlay">
+            <h3>CNC Design</h3>
+          </div>
+        </a>
+
+        <a href="project-details.php?id=5" class="project-modern-card scroll-animate">
+          <img src="assets/images/project5.jpg" alt="Wood Display">
+          <div class="project-modern-overlay">
+            <h3>Wood Display</h3>
+          </div>
+        </a>
+      </div>
+
+      <button class="scroll-btn right" id="scrollRight">&#10095;</button>
+    </div>
+  </section>
+
+
+
   <!------java script------>
   <script src="assets/js/main.js"></script>
 </body>

@@ -157,7 +157,7 @@ img {
   }
 }
 
-/* Hero style */
+/* Hero section style */
 .hero {
   position: relative;
   height: 100vh;
@@ -214,4 +214,117 @@ img {
 
 .btn:hover {
   background-color: #a95818;
+}
+
+
+/* Recent projects section style */
+.recent-projects-modern {
+  padding: 40px 0 60px;
+  background-color: #ffffff;
+  margin-top: -40px;
+}
+
+.projects-wrapper {
+  position: relative;
+}
+
+.projects-row {
+  display: flex;
+  gap: 16px;
+  overflow-x: auto;
+  padding: 20px 20px;
+  margin-top: 30px;
+  scroll-behavior: smooth;
+}
+
+.projects-row::-webkit-scrollbar {
+  height: 8px;
+}
+
+.projects-row::-webkit-scrollbar-thumb {
+  background: #c96d22;
+  border-radius: 10px;
+}
+
+.project-modern-card {
+  position: relative;
+  min-width: 260px;
+  height: 180px;
+  flex: 0 0 auto;
+  border-radius: 12px;
+  overflow: hidden;
+  text-decoration: none;
+  background: #eee;
+  transition: all 0.4s ease;
+}
+
+.project-modern-card img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: transform 0.5s ease;
+}
+
+.project-modern-overlay {
+  position: absolute;
+  inset: 0;
+  display: flex;
+  align-items: end;
+  padding: 14px;
+  background: linear-gradient(to top, rgba(0,0,0,0.65), transparent);
+  transition: 0.4s ease;
+}
+
+.project-modern-overlay h3 {
+  color: #fff;
+  font-size: 16px;
+  font-weight: bold;
+  transform: translateY(10px);
+  transition: 0.4s ease;
+}
+
+/* hover effect projects */
+.project-modern-card:hover img {
+  transform: translateY(-8px);
+}
+
+.project-modern-card:hover .project-modern-overlay {
+  background: linear-gradient(to top, rgba(0,0,0,0.8), transparent);
+}
+
+.project-modern-card:hover h3 {
+  transform: translateY(0);
+}
+
+.scroll-btn {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  background: #c96d22;
+  color: #fff;
+  border: none;
+  font-size: 22px;
+  width: 45px;
+  height: 45px;
+  border-radius: 50%;
+  cursor: pointer;
+  z-index: 5;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: 0.3s ease;
+  opacity: 0.8;
+}
+
+.scroll-btn:hover {
+  background: #a95818;
+  opacity: 1;
+}
+
+.scroll-btn.left {
+  left: 10px;
+}
+
+.scroll-btn.right {
+  right: 10px;
 }
