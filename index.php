@@ -6,7 +6,7 @@
   <title>ARAK Wood</title>
   
  <!------css style------>
-  <link rel="stylesheet" href="assets/css/style.css">
+  <link rel="stylesheet" href="assets/css/style.css?v=31">
 </head>
 <body>
 
@@ -24,7 +24,7 @@
         <ul class="nav-links">
           <li><a href="#home">Home</a></li>
           <li><a href="#projects">Products</a></li>
-          <li><a href="#services">Services</a></li>
+          <li><a href="service.php">Services</a></li>
           <li><a href="#why-arak">About Us</a></li>
           <li><a href="#footer">Contact</a></li>
         </ul>
@@ -107,6 +107,14 @@
 
 
 
+
+  <!-- Services Section -->
+  <section class="services-section" id="services">
+    <div class="container">
+      <div class="section-heading">
+        <h2 class="scroll-animate">Our Services</h2>
+        <p class="scroll-animate">We provide a range of professional woodwork and finishing services.</p>
+      </div>
 
       <div class="services-grid">
         <div class="service-card scroll-left">
