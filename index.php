@@ -107,6 +107,45 @@
 
 
 
+
+      <div class="services-grid">
+        <div class="service-card scroll-left">
+          <img src="assets/images/service1.jpg" alt="CNC Service">
+          <div class="service-card-content">
+            <h3>CNC Cutting</h3>
+            <a href="services.php#cnc-cutting" class="read-more-btn">Read More</a>
+          </div>
+        </div>
+
+        <div class="service-card scroll-right">
+          <img src="assets/images/service2.jpg" alt="Laser Service">
+          <div class="service-card-content">
+            <h3>Laser Cutting</h3>
+            <a href="services.php#laser-cutting" class="read-more-btn">Read More</a>
+          </div>
+        </div>
+
+        <div class="service-card scroll-left">
+          <img src="assets/images/service3.jpg" alt="Press Service">
+          <div class="service-card-content">
+            <h3>Press Service</h3>
+            <a href="services.php#press-service" class="read-more-btn">Read More</a>
+          </div>
+        </div>
+
+        <div class="service-card scroll-right">
+          <img src="assets/images/service4.jpg" alt="Custom Design">
+          <div class="service-card-content">
+            <h3>Custom Design</h3>
+            <a href="services.php#custom-design" class="read-more-btn">Read More</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+
+
   <!------java script------>
   <script src="assets/js/main.js"></script>
 </body>
