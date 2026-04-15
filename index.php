@@ -25,11 +25,11 @@
       <!-- Navigation -->
       <nav class="navbar" id="navbar">
         <ul class="nav-links">
-          <li><a href="#home">Home</a></li>
-          <li><a href="#projects">Products</a></li>
+          <li><a href="index.php">Home</a></li>
+          <li><a href="products.php">Products</a></li>
           <li><a href="service.php">Services</a></li>
-          <li><a href="#why-arak">About Us</a></li>
-          <li><a href="#footer">Contact</a></li>
+          <li><a href="about.php">About Us</a></li>
+          <li><a href="contact.php">Contact</a></li>
         </ul>
       </nav>
 
@@ -110,6 +110,53 @@
 
 
 
+   <!------wood features section------->
+    <section class="wood-features-section">
+  <div class="container">
+
+    <div class="section-heading">
+      <h2>Wood Features</h2>
+      <p>Our materials are designed to meet the highest standards of quality and durability.</p>
+    </div>
+
+    <div class="features-grid">
+
+  <div class="feature-item">
+    <i class="fas fa-fire"></i>
+    <p>Fire-resistant</p>
+  </div>
+
+  <div class="feature-item">
+    <i class="fas fa-tint"></i>
+    <p>Water-resistant</p>
+  </div>
+
+  <div class="feature-item">
+    <i class="fas fa-thermometer-half"></i>
+    <p>Heat-resistant</p>
+  </div>
+
+  <div class="feature-item">
+    <i class="fas fa-flask"></i>
+    <p>Chemical-resistant</p>
+  </div>
+
+  <div class="feature-item">
+    <i class="fas fa-palette"></i>
+    <p>Colorful</p>
+  </div>
+
+  <div class="feature-item">
+    <i class="fas fa-broom"></i>
+    <p>Easy to Clean</p>
+  </div>
+
+</div>
+  </div>
+</section>
+
+
+
 
   <!-- Services Section -->
   <section class="services-section" id="services">
@@ -124,7 +171,7 @@
           <img src="assets/images/service1.jpg" alt="CNC Service">
           <div class="service-card-content">
             <h3>CNC Cutting</h3>
-            <a href="services.php#cnc-cutting" class="read-more-btn">Read More</a>
+            <a href="service.php#cnc-cutting" class="read-more-btn">Read More</a>
           </div>
         </div>
 
@@ -132,7 +179,7 @@
           <img src="assets/images/service2.jpg" alt="Laser Service">
           <div class="service-card-content">
             <h3>Laser Cutting</h3>
-            <a href="services.php#laser-cutting" class="read-more-btn">Read More</a>
+            <a href="service.php#laser-cutting" class="read-more-btn">Read More</a>
           </div>
         </div>
 
@@ -140,7 +187,7 @@
           <img src="assets/images/service3.jpg" alt="Press Service">
           <div class="service-card-content">
             <h3>Press Service</h3>
-            <a href="services.php#press-service" class="read-more-btn">Read More</a>
+            <a href="service.php#press-service" class="read-more-btn">Read More</a>
           </div>
         </div>
 
@@ -148,7 +195,7 @@
           <img src="assets/images/service4.jpg" alt="Custom Design">
           <div class="service-card-content">
             <h3>Custom Design</h3>
-            <a href="services.php#custom-design" class="read-more-btn">Read More</a>
+            <a href="service.php#custom-design" class="read-more-btn">Read More</a>
           </div>
         </div>
       </div>
@@ -157,6 +204,44 @@
 
 
 
+   <!-- Why Choose ARAK -->
+  <section class="why-choose-section" id="why-arak">
+    <div class="container">
+      <div class="section-heading">
+        <h2 class="scroll-animate">Why Choose ARAK?</h2>
+        <p class="scroll-animate">We combine craftsmanship, quality, and custom solutions to bring every project to life.</p>
+      </div>
+
+      <div class="why-grid">
+        <div class="why-card scroll-left">
+          <h3>High Quality</h3>
+          <p>
+            We focus on durable materials, precise finishing, and professional woodwork in every project.
+          </p>
+          <a href="about.php" class="read-more-btn">Read More</a>
+        </div>
+
+        <div class="why-card scroll-animate">
+          <h3>Custom Solutions</h3>
+          <p>
+            Every client has different needs, so we create custom designs and tailored wood solutions.
+          </p>
+          <a href="about.php" class="read-more-btn">Read More</a>
+        </div>
+
+        <div class="why-card scroll-right">
+          <h3>Experienced Team</h3>
+          <p>
+            Our team has practical experience in furniture, CNC work, and interior wood design.
+          </p>
+          <a href="about.php" class="read-more-btn">Read More</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+
+  <!----footer section---->
   <footer class="site-footer" id="footer">
   <div class="container footer-grid">
 
@@ -197,7 +282,7 @@
       <p>Phone: +971 55 841 0400</p>
       <p>Location: Sharjah, UAE</p>
       <br>
- <h3>Working Hours</h3>
+        <h3>Working Hours</h3>
           <p>Monday - Thursday: 8:00 AM - 6:00 PM</p>
           <p>Friday: Closed</p>
           <p> Saturday + Sunday: 9:00AM - 04:00 PM </P>
@@ -208,6 +293,7 @@
   <div class="footer-bottom">
     <p>&copy; 2026 ARAK Wood. All rights reserved.</p>
   </div>
+  
 </footer>
 
 

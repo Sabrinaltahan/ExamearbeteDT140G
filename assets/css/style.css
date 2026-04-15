@@ -590,6 +590,92 @@ img {
   }
 }
 
+
+/* wood features section style */
+
+/* Section */
+.wood-features-section {
+  background: #f9f9f9;
+  padding: 50px 0;
+}
+
+/* Grid */
+.features-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  margin-top: 30px;
+  border-top: 1px solid #eee;
+  border-left: 1px solid #eee;
+}
+
+/* Item */
+.feature-item {
+  text-align: center;
+  padding: 40px 20px;
+
+  border-right: 1px solid #eee;
+  border-bottom: 1px solid #eee;
+
+  transition: all 0.3s ease;
+}
+
+/* Icon */
+.feature-item i {
+  font-size: 40px;
+  margin-bottom: 15px;
+  color: #c96d22; /* لون البراند */
+  transition: all 0.3s ease;
+}
+
+/* Text */
+.feature-item p {
+  font-size: 15px;
+  color: #333;
+  margin: 0;
+}
+
+/* 🔥 Hover */
+.feature-item:hover {
+  background: rgb
+}
+
+.feature-item:hover {
+  transform: translateY(-10px) scale(1.02);
+  border-color: rgba(201,109,34,0.6);
+  box-shadow: 0 15px 35px rgba(0,0,0,0.4);
+    color: #c96d22;
+    border-radius: 20px;
+
+}
+
+
+/* إزالة الحدود الزائدة */
+.feature-item:nth-child(3n) {
+  border-right: none;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .features-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .feature-item:nth-child(2n) {
+    border-right: none;
+  }
+}
+
+@media (max-width: 500px) {
+  .features-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .feature-item {
+    border-right: none;
+  }
+}
+
+
 /* services page style */
 .services-details-page {
   padding: 80px 0;
@@ -674,6 +760,45 @@ img {
   .service-detail-image img {
     height: 260px;
   }
+}
+
+
+/* Why choose us section style */
+.why-choose-section {
+  padding: 80px 0;
+  background-color: #f8f5f1;
+}
+
+.why-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 24px;
+}
+
+.why-card {
+  background-color: #fff;
+  padding: 30px 24px;
+  border-radius: 14px;
+  box-shadow: 0 6px 18px rgba(0, 0, 0, 0.08);
+  text-align: center;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.why-card h3 {
+  font-size: 24px;
+  color: #4b2e1f;
+  margin-bottom: 16px;
+}
+
+.why-card p {
+  color: #555;
+  line-height: 1.8;
+  margin-bottom: 20px;
+}
+
+.why-card:hover {
+  transform: translateY(-8px);
+  box-shadow: 0 10px 24px rgba(0, 0, 0, 0.12);
 }
 
 
