@@ -1,42 +1,8 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>ARAK Wood</title>
-  
- <!------css style------>
-  <link rel="stylesheet" href="assets/css/style.css?v=31">
-</head>
-<body>
+<?php 
+$PageTitle = "Services - ARAK wood";
+include("includes/header.php");
+?>
 
-  <!-- Header -->
-  <header class="site-header">
-    <div class="container header-container">
-
-      <!-- Logo -->
-      <a href="index.php" class="logo">
-        <img src="assets/images/logo.png" alt="ARAK Wood Logo">
-      </a>
-
-      <!-- Navigation -->
-      <nav class="navbar" id="navbar">
-        <ul class="nav-links">
-          <li><a href="#home">Home</a></li>
-          <li><a href="#projects">Products</a></li>
-          <li><a href="service.php">Services</a></li>
-          <li><a href="#why-arak">About Us</a></li>
-          <li><a href="#footer">Contact</a></li>
-        </ul>
-      </nav>
-
-      <!-- CTA -->
-      <a href="#" class="header-btn">Request a Quote</a>
-
-      <!-- Mobile Menu -->
-      <button class="menu-toggle" id="menuToggle">&#9776;</button>
-    </div>
-  </header>
 
 <!----service page---->
 <section class="services-details-page">
@@ -140,4 +106,7 @@
 
   </div>
 </section>
+
+
+<?php include ("includes/footer.php"); ?>
 
