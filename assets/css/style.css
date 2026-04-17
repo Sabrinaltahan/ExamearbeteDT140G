@@ -998,3 +998,43 @@ img {
   line-height: 1.8;
   margin-bottom: 20px;
 }
+
+/* Values */
+.about-values {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 25px;
+}
+
+.value-card {
+  background: #fff;
+  padding: 25px;
+  border-radius: 14px;
+  text-align: center;
+  box-shadow: 0 6px 18px rgba(0,0,0,0.08);
+  transition: 0.3s;
+}
+
+.value-card h3 {
+  margin-bottom: 10px;
+  color: #4b2e1f;
+}
+
+.value-card p {
+  color: #666;
+}
+
+.value-card:hover {
+  transform: translateY(-6px);
+}
+
+/* Responsive */
+@media (max-width: 992px) {
+  .about-layout {
+    grid-template-columns: 1fr;
+  }
+
+  .about-values {
+    grid-template-columns: 1fr;
+  }
+}

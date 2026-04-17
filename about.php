@@ -55,3 +55,28 @@ include("includes/header.php");
       </div>
 
     </div>
+
+
+       <!-- Values -->
+    <div class="about-values">
+      <div class="value-card">
+        <h3>Quality</h3>
+        <p>We focus on delivering durable and high-quality woodwork.</p>
+      </div>
+
+      <div class="value-card">
+        <h3>Precision</h3>
+        <p>We use advanced technology to ensure accuracy in every detail.</p>
+      </div>
+
+      <div class="value-card">
+        <h3>Customization</h3>
+        <p>Every project is tailored to meet the client’s needs.</p>
+      </div>
+    </div>
+
+  </div>
+</section>
+
+
+
