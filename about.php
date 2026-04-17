@@ -79,4 +79,50 @@ include("includes/header.php");
 </section>
 
 
+<!------wood features section------->
+    <section class="wood-features-section">
+  <div class="container">
 
+    <div class="section-heading">
+      <h2>Wood Features</h2>
+      <p>Our materials are designed to meet the highest standards of quality and durability.</p>
+    </div>
+
+    <div class="features-grid">
+
+      <div class="feature-item">
+        <i class="fas fa-fire"></i>
+        <p>Fire-resistant</p>
+      </div>
+
+      <div class="feature-item">
+        <i class="fas fa-tint"></i>
+        <p>Water-resistant</p>
+      </div>
+
+      <div class="feature-item">
+        <i class="fas fa-thermometer-half"></i>
+        <p>Heat-resistant</p>
+      </div>
+
+      <div class="feature-item">
+        <i class="fas fa-flask"></i>
+        <p>Chemical-resistant</p>
+      </div>
+
+      <div class="feature-item">
+        <i class="fas fa-palette"></i>
+        <p>Colorful</p>
+      </div>
+
+      <div class="feature-item">
+        <i class="fas fa-broom"></i>
+        <p>Easy to Clean</p>
+      </div>
+
+    </div>
+
+  </div>
+</section>
+
+<?php include("includes/footer.php"); ?>
