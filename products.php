@@ -1,6 +1,11 @@
 <?php
 $pageTitle = "Products - ARAK Wood";
+require_once 'db.php';
 include("includes/header.php");
+
+// جلب كل المنتجات من قاعدة البيانات
+$stmt = $pdo->query("SELECT * FROM products ORDER BY created_at DESC");
+$products = $stmt->fetchAll(PDO::FETCH_ASSOC);
 ?>
 
 <section class="products-page">
@@ -16,71 +21,25 @@ include("includes/header.php");
 
     <div class="products-grid">
 
-      <div class="product-card">
-        <img src="assets/images/product1.jpg" alt="Wood Kitchen">
-        <div class="product-card-content">
-          <h3>Wood Kitchen</h3>
-          <p>
-            Modern kitchen solutions with high-quality finishes and custom wood details.
-          </p>
-          <a href="product-details.php?id=1" class="btn">View Details</a>
-        </div>
-      </div>
+      <?php if (!empty($products)): ?>
+        <?php foreach ($products as $product): ?>
+          <div class="product-card">
+            <img src="assets/images/<?php echo htmlspecialchars($product['image']); ?>" alt="<?php echo htmlspecialchars($product['name']); ?>">
 
-      <div class="product-card">
-        <img src="assets/images/product2.jpg" alt="Bedroom Furniture">
-        <div class="product-card-content">
-          <h3>Bedroom Furniture</h3>
-          <p>
-            Elegant and practical bedroom furniture designed to fit different interior styles.
-          </p>
-          <a href="product-details.php?id=2" class="btn">View Details</a>
-        </div>
-      </div>
+            <div class="product-card-content">
+              <h3><?php echo htmlspecialchars($product['name']); ?></h3>
 
-      <div class="product-card">
-        <img src="assets/images/product3.jpg" alt="Office Desk">
-        <div class="product-card-content">
-          <h3>Office Desk</h3>
-          <p>
-            Functional office desks and workspace solutions with a clean and modern look.
-          </p>
-          <a href="product-details.php?id=3" class="btn">View Details</a>
-        </div>
-      </div>
+              <p>
+                <?php echo htmlspecialchars($product['description']); ?>
+              </p>
 
-      <div class="product-card">
-        <img src="assets/images/product4.jpg" alt="Wood Wall Panels">
-        <div class="product-card-content">
-          <h3>Wall Panels</h3>
-          <p>
-            Decorative wood wall panels that add warmth and character to any space.
-          </p>
-          <a href="product-details.php?id=4" class="btn">View Details</a>
-        </div>
-      </div>
-
-      <div class="product-card">
-        <img src="assets/images/product5.jpg" alt="Custom Shelves">
-        <div class="product-card-content">
-          <h3>Custom Shelves</h3>
-          <p>
-            Tailored shelving units made to match different storage and design needs.
-          </p>
-          <a href="product-details.php?id=5" class="btn">View Details</a>
-        </div>
-      </div>
-
-      <div class="product-card">
-        <img src="assets/images/product6.jpg" alt="Reception Counter">
-        <div class="product-card-content">
-          <h3>Reception Counter</h3>
-          <p>
-            Custom-made reception counters suitable for offices, shops, and business spaces.
-          </p>
-          <a href="product-details.php?id=6" class="btn">View Details</a>
-        </div>
-      </div>
+              <a href="product-details.php?id=<?php echo $product['id']; ?>" class="btn">View Details</a>
+            </div>
+          </div>
+        <?php endforeach; ?>
+      <?php else: ?>
+        <p>No products found.</p>
+      <?php endif; ?>
 
     </div>
   </div>
