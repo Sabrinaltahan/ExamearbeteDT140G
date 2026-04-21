@@ -1,32 +1,10 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title><?php echo htmlspecialchars($product['name']); ?> - ARAK Wood</title>
-  <link rel="stylesheet" href="assets/css/style.css?v=13">
-</head>
-<body>
+<?php
+$pageTitle = "Project Details - ARAK Wood";
 
-<header class="site-header">
-  <div class="container header-container">
-    <a href="index.php" class="logo">
-      <img src="assets/images/logo.png" alt="ARAK Wood Logo">
-    </a>
+//header
+include("includes/header.php");
+?>
 
-    <nav class="navbar">
-      <ul class="nav-links">
-        <li><a href="index.php#home">Home</a></li>
-        <li><a href="products.php">Products</a></li>
-        <li><a href="index.php#services">Services</a></li>
-        <li><a href="index.php#why-arak">About Us</a></li>
-        <li><a href="index.php#footer">Contact</a></li>
-      </ul>
-    </nav>
-
-    <a href="request-quote.php?product=<?php echo urlencode($product['name']); ?>" class="header-btn">Request a Quote</a>
-  </div>
-</header>
 
 <section class="product-details-page">
   <div class="container product-details-layout">
@@ -101,5 +79,4 @@
   </div>
 </section>
 
-</body>
-</html>
+<?php include("includes/footer.php"); ?>
