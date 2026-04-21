@@ -3,7 +3,7 @@ $pageTitle = "Products - ARAK Wood";
 require_once 'db.php';
 include("includes/header.php");
 
-// جلب كل المنتجات من قاعدة البيانات
+// hämta alla produkter från databasen
 $stmt = $pdo->query("SELECT * FROM products ORDER BY created_at DESC");
 $products = $stmt->fetchAll(PDO::FETCH_ASSOC);
 ?>
