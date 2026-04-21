@@ -111,7 +111,6 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
 
 
 
-
        <!-- Contact Form -->
       <div class="contact-form-box">
         <h2>Send a Message</h2>
