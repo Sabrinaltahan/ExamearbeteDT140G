@@ -34,7 +34,7 @@
       </nav>
 
       <!-- CTA -->
-      <a href="#" class="header-btn">Request a Quote</a>
+      <a href="request-quote.php" class="header-btn">Request a Quote</a>
 
       <!-- Mobile Menu -->
       <button class="menu-toggle" id="menuToggle">&#9776;</button>
