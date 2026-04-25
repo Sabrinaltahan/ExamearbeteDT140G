@@ -1,20 +1,13 @@
 <?php
-// تشغيل الجلسة حتى نقدر نستخدم بيانات الأدمن المسجل دخوله
 session_start();
-
-// استدعاء ملف الاتصال بقاعدة البيانات
 require_once 'db.php';
 
-// حماية الصفحة: إذا الأدمن غير مسجل دخول يرجع لصفحة تسجيل الدخول
-if (!isset($_SESSION["admin_id"])) {
+if (!isset($_SESSION['admin_id'])) {
     header("Location: admin-login.php");
     exit;
 }
 
-// جلب جميع طلبات عرض السعر من قاعدة البيانات، الأحدث أولاً
 $stmt = $pdo->query("SELECT * FROM quote_requests ORDER BY created_at DESC");
-
-// تحويل النتائج إلى مصفوفة
 $requests = $stmt->fetchAll(PDO::FETCH_ASSOC);
 ?>
 
@@ -22,117 +15,95 @@ $requests = $stmt->fetchAll(PDO::FETCH_ASSOC);
 <html lang="en">
 <head>
   <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Admin Dashboard - ARAK Wood</title>
-
-  <!-- ربط ملف التنسيق -->
-  <link rel="stylesheet" href="assets/css/style.css">
+  <link rel="stylesheet" href="assets/css/style.css?v=7">
 </head>
 <body>
 
 <section class="quote-page">
   <div class="container">
+   <div style="display:flex; justify-content:space-between; align-items:center; margin-bottom:20px; flex-wrap:wrap; gap:15px;">
+  <div>
+    <h1>Admin Dashboard</h1>
+    <p>Welcome, <?php echo htmlspecialchars($_SESSION['admin_username']); ?></p>
+  </div>
+  <div style="display:flex; gap:10px; flex-wrap:wrap;">
+    <a href="admin-products.php" class="btn">Manage Products</a>
+    <a href="admin-logout.php" class="btn">Logout</a>
+  </div>
+</div>
 
-    <!-- شريط أعلى لوحة التحكم -->
-    <div class="admin-top-bar">
-      <div>
-        <h1>Admin Dashboard</h1>
+    <?php if (isset($_GET['deleted'])): ?>
+      <div class="success-message">Request deleted successfully.</div>
+    <?php endif; ?>
 
-        <!-- عرض اسم الأدمن -->
-        <p>
-          Welcome, <?php echo htmlspecialchars($_SESSION["admin_username"]); ?>
-        </p>
-      </div>
+    <?php if (isset($_GET['updated'])): ?>
+      <div class="success-message">Status updated successfully.</div>
+    <?php endif; ?>
 
-      <!-- زر تسجيل الخروج -->
-      <a href="admin-logout.php" class="delete-btn">Logout</a>
-    </div>
-
-    <!-- جدول عرض طلبات عرض السعر -->
     <div class="admin-table-wrapper">
       <table class="admin-table">
-
-        <!-- عناوين الأعمدة -->
         <thead>
           <tr>
             <th>Name</th>
             <th>Phone</th>
             <th>Email</th>
-            <th>Product</th>
             <th>Service</th>
-            <th>Dimensions</th>
+            <th>Width</th>
+            <th>Height</th>
+            <th>Depth</th>
             <th>Details</th>
             <th>Image</th>
             <th>Status</th>
             <th>Date</th>
+            <th>Actions</th>
           </tr>
         </thead>
-
         <tbody>
-
-          <!-- التحقق إذا كان يوجد طلبات -->
-          <?php if (!empty($requests)): ?>
-
-            <!-- المرور على كل طلب وعرضه في صف داخل الجدول -->
-            <?php foreach ($requests as $request): ?>
-              <tr>
-
-                <!-- بيانات العميل -->
-                <td><?php echo htmlspecialchars($request["full_name"]); ?></td>
-                <td><?php echo htmlspecialchars($request["phone"]); ?></td>
-                <td><?php echo htmlspecialchars($request["email"]); ?></td>
-
-                <!-- اسم المنتج إذا كان الطلب مرتبط بمنتج -->
-                <td>
-                  <?php echo htmlspecialchars($request["product_name"] ?? ""); ?>
-                </td>
-
-                <!-- نوع الخدمة المختارة -->
-                <td><?php echo htmlspecialchars($request["service_type"]); ?></td>
-
-                <!-- أبعاد المشروع -->
-                <td>
-                  <?php echo htmlspecialchars($request["width"]); ?> ×
-                  <?php echo htmlspecialchars($request["height"]); ?> ×
-                  <?php echo htmlspecialchars($request["depth"]); ?> cm
-                </td>
-
-                <!-- تفاصيل المشروع -->
-                <td><?php echo htmlspecialchars($request["project_details"]); ?></td>
-
-                <!-- صورة مرجعية إذا قام المستخدم برفع صورة -->
-                <td>
-                  <?php if (!empty($request["reference_image"])): ?>
-                    <a 
-                      href="uploads/<?php echo htmlspecialchars($request["reference_image"]); ?>" 
-                      target="_blank"
-                    >
-                      <img 
-                        src="uploads/<?php echo htmlspecialchars($request["reference_image"]); ?>" 
-                        alt="Reference Image" 
-                        class="admin-thumb"
-                      >
-                    </a>
-                  <?php else: ?>
-                    No image
-                  <?php endif; ?>
-                </td>
-
-                <!-- حالة الطلب -->
-                <td><?php echo htmlspecialchars($request["status"]); ?></td>
-
-                <!-- تاريخ إرسال الطلب -->
-                <td><?php echo htmlspecialchars($request["created_at"]); ?></td>
-
-              </tr>
-            <?php endforeach; ?>
-
-          <!-- إذا لا يوجد طلبات -->
-          <?php else: ?>
+          <?php foreach ($requests as $request): ?>
             <tr>
-              <td colspan="10">No quote requests found.</td>
+              <td><?php echo htmlspecialchars($request['full_name']); ?></td>
+              <td><?php echo htmlspecialchars($request['phone']); ?></td>
+              <td><?php echo htmlspecialchars($request['email']); ?></td>
+              <td><?php echo htmlspecialchars($request['service_type']); ?></td>
+              <td><?php echo htmlspecialchars($request['width']); ?> cm</td>
+              <td><?php echo htmlspecialchars($request['height']); ?> cm</td>
+              <td><?php echo htmlspecialchars($request['depth']); ?> cm</td>
+              <td><?php echo htmlspecialchars($request['project_details']); ?></td>
+              <td>
+  <?php if (!empty($request['reference_image'])): ?>
+    <a href="uploads/<?php echo htmlspecialchars($request['reference_image']); ?>" target="_blank">
+      <img 
+        src="uploads/<?php echo htmlspecialchars($request['reference_image']); ?>" 
+        alt="Reference Image" 
+        class="admin-thumb"
+      >
+    </a>
+  <?php else: ?>
+    No image
+  <?php endif; ?>
+</td>
+              <td>
+                <form action="update-status.php" method="POST" class="status-form">
+                  <input type="hidden" name="id" value="<?php echo $request['id']; ?>">
+                  <select name="status" onchange="this.form.submit()">
+                    <option value="Pending" <?php if ($request['status'] === 'Pending') echo 'selected'; ?>>Pending</option>
+                    <option value="In Progress" <?php if ($request['status'] === 'In Progress') echo 'selected'; ?>>In Progress</option>
+                    <option value="Completed" <?php if ($request['status'] === 'Completed') echo 'selected'; ?>>Completed</option>
+                  </select>
+                </form>
+              </td>
+              <td><?php echo htmlspecialchars($request['created_at']); ?></td>
+              <td>
+                <a href="delete-request.php?id=<?php echo $request['id']; ?>" 
+                   class="delete-btn"
+                   onclick="return confirm('Are you sure you want to delete this request?');">
+                   Delete
+                </a>
+              </td>
             </tr>
-          <?php endif; ?>
-
+          <?php endforeach; ?>
         </tbody>
       </table>
     </div>

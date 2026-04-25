@@ -1347,3 +1347,14 @@ img {
 .delete-btn:hover {
   background: #8f1f1b;
 }
+
+
+/* status request style */
+.status-select {
+  padding: 8px 10px;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  background: #fff;
+  color: #4b2e1f;
+  font-weight: bold;
+}
