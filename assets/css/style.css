@@ -1358,3 +1358,10 @@ img {
   color: #4b2e1f;
   font-weight: bold;
 }
+
+
+/* admin products page style to actions */
+admin-action-btn{
+  padding: 8px 12px;
+  font-size: 14px;
+}
