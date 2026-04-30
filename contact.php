@@ -103,9 +103,9 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
 
         <div class="contact-info-item">
           <h3>Working Hours</h3>
-          <p>Monday - Thursday: 8:00 AM - 6:00 PM</p>
+          <p>Monday - Thursday: 8:00 AM - 01:00 PM / 02:00PM - 06:00 PM</p>
           <p>Friday: Closed</p>
-          <p> Saturday + Sunday: 9:00AM - 04:00 PM </P>
+          <p> Saturday + Sunday:  8:00 AM - 01:00 PM / 02:00PM - 06:00 PM</p>
         </div>
       </div>
 

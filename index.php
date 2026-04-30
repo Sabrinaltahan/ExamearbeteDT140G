@@ -139,18 +139,10 @@ include("includes/header.php");
           </div>
         </div>
 
-        <div class="service-card scroll-right">
-          <img src="assets/images/service2.jpg" alt="Laser Service">
-          <div class="service-card-content">
-            <h3>Laser Cutting</h3>
-            <a href="services.php#laser-cutting" class="read-more-btn">Read More</a>
-          </div>
-        </div>
-
         <div class="service-card scroll-left">
           <img src="assets/images/service3.jpg" alt="Press Service">
           <div class="service-card-content">
-            <h3>Press Service</h3>
+            <h3>Pressing services</h3>
             <a href="services.php#press-service" class="read-more-btn">Read More</a>
           </div>
         </div>
@@ -158,8 +150,17 @@ include("includes/header.php");
         <div class="service-card scroll-right">
           <img src="assets/images/service4.jpg" alt="Custom Design">
           <div class="service-card-content">
-            <h3>Custom Design</h3>
+            <h3>Sanding & Calibrating</h3>
             <a href="services.php#custom-design" class="read-more-btn">Read More</a>
+          </div>
+        </div>
+
+
+        <div class="service-card scroll-right">
+          <img src="assets/images/service2.jpg" alt="Laser Service">
+          <div class="service-card-content">
+            <h3>Laser Cutting</h3>
+            <a href="services.php#laser-cutting" class="read-more-btn">Read More</a>
           </div>
         </div>
       </div>
@@ -213,30 +214,8 @@ include("includes/header.php");
         <p class="scroll-animate">Companies and partners we have worked with.</p>
       </div>
 
-      <div class="brands-grid">
-        <div class="brand-card scroll-left">
-          <img src="assets/images/brand1.png" alt="Brand 1">
-        </div>
+     <img src="assets/images/brands.jpg" alt="ARAK Wood partners" class="brands-full-image">
 
-        <div class="brand-card scroll-animate">
-          <img src="assets/images/brand2.png" alt="Brand 2">
-        </div>
-
-        <div class="brand-card scroll-animate">
-          <img src="assets/images/brand3.png" alt="Brand 3">
-        </div>
-
-        <div class="brand-card scroll-right">
-          <img src="assets/images/brand4.png" alt="Brand 4">
-        </div>
-
-        <div class="brand-card scroll-left">
-          <img src="assets/images/brand5.png" alt="Brand 5">
-        </div>
-
-        <div class="brand-card scroll-right">
-          <img src="assets/images/brand6.png" alt="Brand 6">
-        </div>
       </div>
     </div>
   </section>

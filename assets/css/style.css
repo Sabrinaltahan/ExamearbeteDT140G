@@ -442,6 +442,27 @@ img {
   transform: translateX(0);
 }
 
+
+/* Services responsive for mobile */
+@media (max-width: 768px) {
+  .services-grid {
+    grid-template-columns: 1fr;
+    gap: 24px;
+  }
+
+  .service-card img {
+    height: 260px;
+  }
+
+  .service-card-content h3 {
+    font-size: 24px;
+  }
+
+  .read-more-btn {
+    padding: 12px 22px;
+  }
+}
+
 /* Project Details Page */
 .product-details-page {
   padding: 100px 0;
@@ -804,44 +825,11 @@ img {
 
 
 /* Brands section style */
-.brands-section {
-  padding: 80px 0;
-  background-color: #fff;
-}
-
-.brands-grid {
-  display: grid;
-  grid-template-columns: repeat(6, 1fr);
-  gap: 20px;
-  align-items: center;
-}
-
-.brand-card {
-  background-color: #f8f5f1;
-  border-radius: 12px;
-  padding: 25px 20px;
-  text-align: center;
-  box-shadow: 0 4px 14px rgba(0, 0, 0, 0.06);
-  transition: transform 0.3s ease, box-shadow 0.3s ease;
-}
-
-.brand-card img {
-  max-width: 100%;
-  height: 60px;
-  object-fit: contain;
-  filter: grayscale(100%);
-  opacity: 0.85;
-  transition: 0.3s ease;
-}
-
-.brand-card:hover {
-  transform: translateY(-6px);
-  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
-}
-
-.brand-card:hover img {
-  filter: grayscale(0%);
-  opacity: 1;
+.brands-full-image {
+  width: 100%;
+  max-width: 900px;
+  margin: 30px auto 0;
+  display: block;
 }
 
 

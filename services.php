@@ -36,7 +36,9 @@ include("includes/header.php");
       </div>
     </section>
 
-    <!-- Laser Cutting -->
+
+    
+      <!-- Laser Cutting -->
     <section class="service-detail-block reverse" id="laser-cutting">
       <div class="service-detail-image">
         <img src="assets/images/service2.jpg" alt="Laser Cutting">
@@ -59,13 +61,13 @@ include("includes/header.php");
       </div>
     </section>
 
-    <!-- Press Service -->
+    <!-- Pressing Service -->
     <section class="service-detail-block" id="press-service">
       <div class="service-detail-image">
         <img src="assets/images/service3.jpg" alt="Press Service">
       </div>
       <div class="service-detail-text">
-        <h2>Press Service</h2>
+        <h2>Pressing services</h2>
         <p>
           Press service is an important part of the production process when working
           with layered wood materials, panels, and structural elements. This
@@ -87,22 +89,22 @@ include("includes/header.php");
         <img src="assets/images/service4.jpg" alt="Custom Design">
       </div>
       <div class="service-detail-text">
-        <h2>Custom Design</h2>
+        <h2>Sanding & Calibrating</h2>
         <p>
-          Custom design is one of the core services of ARAK Wood. Instead of
-          offering only standard products, the company works closely with clients
-          to create unique furniture, decorative elements, and interior solutions
-          based on their specific needs, preferences, and space requirements.
-        </p>
-        <p>
-          This service is valuable because every project can be adapted in terms
-          of size, materials, shape, and style. It gives customers greater freedom
-          and makes the final product more personal and functional. Custom design
-          also reflects the company’s identity as a business focused on tailored,
-          high-quality woodwork.
+         We offer professional sanding and calibrating services to ensure a smooth, 
+         even, and high-quality finish for all wood surfaces. Using advanced machinery, 
+         we precisely adjust thickness and remove imperfections to prepare the material for
+          further processing such as painting, polishing, or installation.
+            </p>
+           <p>
+           Our sanding and calibrating process guarantees consistency, accuracy, 
+           and a refined surface that meets industry standards. This service is essential 
+           for achieving a perfect final look and enhancing the durability of the product..
         </p>
       </div>
     </section>
+
+
 
   </div>
 </section>
