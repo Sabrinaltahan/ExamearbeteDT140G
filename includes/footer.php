@@ -54,7 +54,14 @@
 
 </footer>
 
-
+<a 
+  href="https://wa.me/971559610114?text=Hello%20ARAK%20Wood,%20I%20would%20like%20to%20ask%20about%20your%20services."
+  class="whatsapp-float"
+  target="_blank"
+  aria-label="WhatsApp"
+>
+  <i class="fab fa-whatsapp"></i>
+</a>
   <!------java script------>
   <script src="assets/js/main.js"></script>
 </body>

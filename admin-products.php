@@ -161,7 +161,7 @@ $products = $stmt->fetchAll(PDO::FETCH_ASSOC);
                   <a 
                     href="delete-product.php?id=<?php echo $product['id']; ?>" 
                     class="delete-btn"
-                    onclick="return confirm('Are you sure?');"
+                    onclick="return confirm('Are you sure you want to delete this product?');"
                   >
                     Delete
                   </a>
