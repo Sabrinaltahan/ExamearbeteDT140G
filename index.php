@@ -75,47 +75,25 @@ include("includes/header.php");
 
 
    <!------wood features section------->
-    <section class="wood-features-section">
+  <!-- FEATURES -->
+<section class="features-section">
   <div class="container">
 
-    <div class="section-heading">
-      <h2>Wood Features</h2>
-      <p>Our materials are designed to meet the highest standards of quality and durability.</p>
-    </div>
+    <h2 class="features-title">Resistant To</h2>
 
     <div class="features-grid">
 
-  <div class="feature-item">
-    <i class="fas fa-fire"></i>
-    <p>Fire-resistant</p>
-  </div>
+      <div class="feature"><i class="fa-solid fa-shield-halved"></i><p>Abrasion</p></div>
+      <div class="feature"><i class="fa-solid fa-hammer"></i><p>Impact</p></div>
+      <div class="feature"><i class="fa-solid fa-droplet"></i><p>Moisture</p></div>
+      <div class="feature"><i class="fa-solid fa-temperature-high"></i><p>Heat</p></div>
+      <div class="feature"><i class="fa-solid fa-bolt"></i><p>Cracking</p></div>
+      <div class="feature"><i class="fa-solid fa-flask"></i><p>Chemicals</p></div>
+      <div class="feature"><i class="fa-solid fa-lines-leaning"></i><p>Scratches</p></div>
+      <div class="feature"><i class="fa-regular fa-lightbulb"></i><p>Light</p></div>
 
-  <div class="feature-item">
-    <i class="fas fa-tint"></i>
-    <p>Water-resistant</p>
-  </div>
+    </div>
 
-  <div class="feature-item">
-    <i class="fas fa-thermometer-half"></i>
-    <p>Heat-resistant</p>
-  </div>
-
-  <div class="feature-item">
-    <i class="fas fa-flask"></i>
-    <p>Chemical-resistant</p>
-  </div>
-
-  <div class="feature-item">
-    <i class="fas fa-palette"></i>
-    <p>Colorful</p>
-  </div>
-
-  <div class="feature-item">
-    <i class="fas fa-broom"></i>
-    <p>Easy to Clean</p>
-  </div>
-
-</div>
   </div>
 </section>
 
@@ -207,18 +185,19 @@ include("includes/header.php");
 
 
    <!-- Brands Section -->
-  <section class="brands-section" id="brands">
-    <div class="container">
-      <div class="section-heading">
-        <h2 class="scroll-animate">Brands</h2>
-        <p class="scroll-animate">Companies and partners we have worked with.</p>
-      </div>
-
-     <img src="assets/images/brands.jpg" alt="ARAK Wood partners" class="brands-full-image">
-
-      </div>
+<section class="brands-section" id="brands">
+  <div class="container">
+    <div class="section-heading">
+      <h2 class="scroll-animate">Brands</h2>
+      <p class="scroll-animate">Companies and partners we have worked with.</p>
     </div>
-  </section>
+
+    <div class="brands-images">
+      <img src="assets/images/brands1.jpg" alt="ARAK Wood partners 1">
+      <img src="assets/images/brands2.jpg" alt="ARAK Wood partners 2">
+    </div>
+  </div>
+</section>
 
 
 <?php include("includes/footer.php"); ?>

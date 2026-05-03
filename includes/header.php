@@ -9,7 +9,7 @@
  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
   
  <!------css style------>
-  <link rel="stylesheet" href="assets/css/style.css? v=50">
+  <link rel="stylesheet" href="assets/css/style.css? v=103">
 
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
 </head>
