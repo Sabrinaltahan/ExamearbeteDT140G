@@ -50,3 +50,24 @@ if (scrollContainer && scrollLeftBtn && scrollRightBtn) {
     });
   });
 }
+
+
+/* load more button i products page */
+
+let offset = 10;
+
+document.getElementById("loadMoreBtn").addEventListener("click", function () {
+  
+  fetch("load-more.php?offset=" + offset)
+    .then(res => res.text())
+    .then(data => {
+
+      if (data.trim() === "") {
+        document.getElementById("loadMoreBtn").style.display = "none";
+      } else {
+        document.querySelector(".products-grid").innerHTML += data;
+        offset += 10;
+      }
+
+    });
+});

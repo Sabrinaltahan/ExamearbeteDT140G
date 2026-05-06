@@ -183,19 +183,42 @@ include("includes/header.php");
     </div>
   </section>
 
+<?php
+require_once 'db.php';
 
-   <!-- Brands Section -->
-<section class="brands-section" id="brands">
+$stmt = $pdo->query("SELECT * FROM products ORDER BY created_at DESC LIMIT 5");
+$homeProducts = $stmt->fetchAll(PDO::FETCH_ASSOC);
+?>
+
+
+<!-----products section ----> 
+<section class="home-products-section" id="products">
   <div class="container">
+
     <div class="section-heading">
-      <h2 class="scroll-animate">Brands</h2>
-      <p class="scroll-animate">Companies and partners we have worked with.</p>
+      <h2 class="scroll-animate">Featured Products</h2>
+      <p class="scroll-animate">Explore some of our latest wood products and custom solutions.</p>
     </div>
 
-    <div class="brands-images">
-      <img src="assets/images/brands1.jpg" alt="ARAK Wood partners 1">
-      <img src="assets/images/brands2.jpg" alt="ARAK Wood partners 2">
+    <div class="home-products-grid">
+      <?php foreach ($homeProducts as $product): ?>
+        <div class="home-product-item">
+          <a href="product-details.php?id=<?php echo $product['id']; ?>">
+            <img 
+              src="assets/images/<?php echo htmlspecialchars($product['image']); ?>" 
+              alt="<?php echo htmlspecialchars($product['name']); ?>"
+            >
+          </a>
+
+          <h3><?php echo htmlspecialchars($product['name']); ?></h3>
+        </div>
+      <?php endforeach; ?>
     </div>
+
+    <div class="see-all-wrapper">
+      <a href="products.php" class="btn">See All</a>
+    </div>
+
   </div>
 </section>
 
