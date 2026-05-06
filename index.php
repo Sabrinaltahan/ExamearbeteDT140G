@@ -100,88 +100,110 @@ include("includes/header.php");
 
 
 
-  <!-- Services Section -->
-  <section class="services-section" id="services">
-    <div class="container">
-      <div class="section-heading">
-        <h2 class="scroll-animate">Our Services</h2>
-        <p class="scroll-animate">We provide a range of professional woodwork and finishing services.</p>
-      </div>
+<!-- Services Section -->
+<section class="services-section" id="services">
+  <div class="container">
 
-      <div class="services-grid">
-        <div class="service-card scroll-left">
-          <img src="assets/images/service1.jpg" alt="CNC Service">
-          <div class="service-card-content">
-            <h3>CNC Cutting</h3>
-            <a href="services.php#cnc-cutting" class="read-more-btn">Read More</a>
-          </div>
-        </div>
-
-        <div class="service-card scroll-left">
-          <img src="assets/images/service3.jpg" alt="Press Service">
-          <div class="service-card-content">
-            <h3>Pressing services</h3>
-            <a href="services.php#press-service" class="read-more-btn">Read More</a>
-          </div>
-        </div>
-
-        <div class="service-card scroll-right">
-          <img src="assets/images/service4.jpg" alt="Custom Design">
-          <div class="service-card-content">
-            <h3>Sanding & Calibrating</h3>
-            <a href="services.php#custom-design" class="read-more-btn">Read More</a>
-          </div>
-        </div>
-
-
-        <div class="service-card scroll-right">
-          <img src="assets/images/service2.jpg" alt="Laser Service">
-          <div class="service-card-content">
-            <h3>Laser Cutting</h3>
-            <a href="services.php#laser-cutting" class="read-more-btn">Read More</a>
-          </div>
-        </div>
-      </div>
+    <div class="section-heading">
+      <h2 class="scroll-animate">Our Services</h2>
+      <p class="scroll-animate">
+        Professional wood solutions with precision and quality craftsmanship.
+      </p>
     </div>
-  </section>
+
+    <div class="services-grid">
+
+      <!-- Service 1 -->
+      <a href="services.php#cnc-cutting" class="service-card scroll-left">
+
+        <img src="assets/images/service1.jpg" alt="CNC Cutting">
+
+        <div class="service-card-content">
+          <h3>CNC Cutting</h3>
+        </div>
+
+      </a>
+
+      <!-- Service 2 -->
+      <a href="services.php#laser-cutting" class="service-card scroll-right">
+
+        <img src="assets/images/service2.jpg" alt="Laser Cutting">
+
+        <div class="service-card-content">
+          <h3>Laser Cutting</h3>
+        </div>
+
+      </a>
+
+      <!-- Service 3 -->
+      <a href="services.php#pressing-services" class="service-card scroll-left">
+
+        <img src="assets/images/service3.jpg" alt="Pressing Services">
+
+        <div class="service-card-content">
+          <h3>Pressing Services</h3>
+        </div>
+
+      </a>
+
+      <!-- Service 4 -->
+      <a href="services.php#sanding-calibrating" class="service-card scroll-right">
+
+        <img src="assets/images/service4.jpg" alt="Sanding & Calibrating">
+
+        <div class="service-card-content">
+          <h3>Sanding & Calibrating</h3>
+        </div>
+
+      </a>
+
+    </div>
+
+  </div>
+</section>
 
 
 
    <!-- Why Choose ARAK -->
-  <section class="why-choose-section" id="why-arak">
-    <div class="container">
-      <div class="section-heading">
-        <h2 class="scroll-animate">Why Choose ARAK?</h2>
-        <p class="scroll-animate">We combine craftsmanship, quality, and custom solutions to bring every project to life.</p>
-      </div>
+  <section class="why-choose-section" id="why-choose">
+  <div class="container">
 
-      <div class="why-grid">
-        <div class="why-card scroll-left">
-          <h3>High Quality</h3>
-          <p>
-            We focus on durable materials, precise finishing, and professional woodwork in every project.
-          </p>
-          <a href="about.php" class="read-more-btn">Read More</a>
-        </div>
-
-        <div class="why-card scroll-animate">
-          <h3>Custom Solutions</h3>
-          <p>
-            Every client has different needs, so we create custom designs and tailored wood solutions.
-          </p>
-          <a href="about.php" class="read-more-btn">Read More</a>
-        </div>
-
-        <div class="why-card scroll-right">
-          <h3>Experienced Team</h3>
-          <p>
-            Our team has practical experience in furniture, CNC work, and interior wood design.
-          </p>
-          <a href="about.php" class="read-more-btn">Read More</a>
-        </div>
-      </div>
+    <div class="section-heading">
+      <h2>Why Choose ARAK?</h2>
+      <p>We combine craftsmanship, quality, and custom solutions to bring every project to life.</p>
     </div>
-  </section>
+
+    <div class="why-grid">
+
+      <div class="why-card">
+        <div class="why-icon">
+          <i class="fa-solid fa-medal"></i>
+        </div>
+        <h3>High Quality</h3>
+        <p>Durable materials, precise finishing, and professional woodwork in every project.</p>
+      </div>
+
+      <div class="why-card">
+        <div class="why-icon">
+          <i class="fa-solid fa-pen-ruler"></i>
+        </div>
+        <h3>Custom Solutions</h3>
+        <p>Tailored designs created to match each client’s needs, style, and project requirements.</p>
+      </div>
+
+      <div class="why-card">
+        <div class="why-icon">
+          <i class="fa-solid fa-users-gear"></i>
+        </div>
+        <h3>Experienced Team</h3>
+        <p>Practical experience in furniture, CNC work, interior wood design, and finishing.</p>
+      </div>
+
+
+    </div>
+  </div>
+</section>
+
 
 <?php
 require_once 'db.php';
