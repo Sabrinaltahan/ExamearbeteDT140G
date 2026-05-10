@@ -1147,9 +1147,11 @@ img {
 
 
 /* quote page style */
+/* request quote page style */
 .quote-page {
-  padding: 80px 0;
-  background-color: #f8f5f1;
+  padding: 100px 0;
+  background: #f8f5f1;
+  min-height: 100vh;
 }
 
 .quote-page h1 {
@@ -1160,31 +1162,30 @@ img {
 
 .quote-page p {
   text-align: center;
-  color: #666;
-  margin-bottom: 30px;
+  margin-bottom: 40px;
+  color: #555;
 }
 
 .quote-form {
-  max-width: 800px;
-  margin: 0 auto;
-  background: #fff;
-  padding: 30px;
-  border-radius: 16px;
-  box-shadow: 0 10px 30px var(--shadow-color);
+  max-width: 650px;
+  margin: auto;
   display: flex;
   flex-direction: column;
   gap: 15px;
+  background: #fff;
+  padding: 30px;
+  border-radius: 14px;
+  box-shadow: 0 6px 18px rgba(0,0,0,0.08);
 }
 
 .quote-form input,
 .quote-form select,
 .quote-form textarea {
-  width: 100%;
   padding: 14px;
+  border-radius: 8px;
   border: 1px solid #ddd;
-  border-radius: 10px;
   font-size: 15px;
-  font-family: Arial, sans-serif;
+  width: 100%;
 }
 
 .quote-form textarea {
@@ -1192,40 +1193,49 @@ img {
   resize: vertical;
 }
 
-.dimensions-grid {
-  display: grid;
-  grid-template-columns: repeat(3, 1fr);
-  gap: 15px;
+.quote-form button {
+  background: var(--primary-color);
+  color: #fff;
+  border: none;
+  padding: 14px;
+  border-radius: 8px;
+  font-weight: bold;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.quote-form button:hover {
+  background: var(--primary-dark);
 }
 
 .file-label {
   font-weight: bold;
   color: #4b2e1f;
+  margin-top: 5px;
 }
 
 .success-message {
   background: #d4edda;
   color: #155724;
-  padding: 12px;
+  padding: 14px;
   border-radius: 8px;
-  margin: 0 auto 20px;
-  max-width: 800px;
+  text-align: center;
+  margin-bottom: 20px;
 }
 
-.error-message {
-  background: #f8d7da;
-  color: #721c24;
-  padding: 12px;
-  border-radius: 8px;
-  margin: 0 auto 20px;
-  max-width: 800px;
+.whatsapp-redirect-box {
+  text-align: center;
+  margin-bottom: 25px;
 }
 
-@media (max-width: 768px) {
-  .dimensions-grid {
-    grid-template-columns: 1fr;
-  }
+.whatsapp-send-btn {
+  background: #25d366;
 }
+
+.whatsapp-send-btn:hover {
+  background: #1ebe5d;
+}
+
 
 
 
