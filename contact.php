@@ -92,7 +92,8 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
 
         <div class="contact-info-item">
           <h3>Phone</h3>
-          <p>+971 55 841 0400</p>
+          <p>+971 55 9610114</p>
+          <p>+971 55 9881154</p>
         </div>
 
         <div class="contact-info-item">

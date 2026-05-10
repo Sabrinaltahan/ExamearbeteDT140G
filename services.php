@@ -16,7 +16,7 @@ include("includes/header.php");
     <!-- CNC Cutting -->
     <section class="service-detail-block" id="cnc-cutting">
       <div class="service-detail-image">
-        <img src="assets/images/service1.jpg" alt="CNC Cutting">
+        <img src="assets/images/cnc-cutting.jpg" alt="CNC Cutting">
       </div>
       <div class="service-detail-text">
         <h2>CNC Cutting</h2>
@@ -41,7 +41,7 @@ include("includes/header.php");
       <!-- Laser Cutting -->
     <section class="service-detail-block reverse" id="laser-cutting">
       <div class="service-detail-image">
-        <img src="assets/images/service2.jpg" alt="Laser Cutting">
+        <img src="assets/images/laser-cutting.jpg" alt="Laser Cutting">
       </div>
       <div class="service-detail-text">
         <h2>Laser Cutting</h2>
@@ -64,7 +64,7 @@ include("includes/header.php");
     <!-- Pressing Service -->
     <section class="service-detail-block" id="pressing-services">
       <div class="service-detail-image">
-        <img src="assets/images/service3.jpg" alt="Press Service">
+        <img src="assets/images/pressing-services.jpg" alt="Pressing Services">
       </div>
       <div class="service-detail-text">
         <h2>Pressing services</h2>
@@ -83,10 +83,10 @@ include("includes/header.php");
       </div>
     </section>
 
-    <!-- Custom Design -->
+    <!-- sanding-calibrating-->
     <section class="service-detail-block reverse" id="sanding-calibrating">
       <div class="service-detail-image">
-        <img src="assets/images/service4.jpg" alt="Custom Design">
+        <img src="assets/images/sanding-calibrating.jpg" alt="Sanding & Calibrating">
       </div>
       <div class="service-detail-text">
         <h2>Sanding & Calibrating</h2>

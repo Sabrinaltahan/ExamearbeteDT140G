@@ -14,10 +14,10 @@
 
       <!-- Social Icons -->
       <div class="social-icons">
-        <a href="#" target="_blank"><i class="fab fa-facebook-f"></i></a>
-        <a href="#" target="_blank"><i class="fab fa-instagram"></i></a>
-        <a href="#" target="_blank"><i class="fab fa-linkedin-in"></i></a>
-        <a href="#" target="_blank"><i class="fab fa-youtube"></i></a>
+        <a href="https://www.facebook.com/share/18TrmLFktY/" target="_blank"><i class="fab fa-facebook-f"></i></a>
+        <a href="https://www.instagram.com/arak.wood?igsh=MTk0ZmNsOHJvdmJpbw==" target="_blank"><i class="fab fa-instagram"></i></a>
+        <a href="https://www.linkedin.com/in/arak-wood-llc-a75406b4?utm_source=share_via&utm_content=profile&utm_medium=member_android" target="_blank"><i class="fab fa-linkedin-in"></i></a>
+        <a href="https://www.youtube.com/@ARAKWood" target="_blank"><i class="fab fa-youtube"></i></a>
       </div>
     </div>
 
@@ -30,6 +30,8 @@
         <li><a href="services.php">Services</a></li>
         <li><a href="about.php">About Us</a></li>
         <li><a href="contact.php">Contact</a></li>
+        <li><a href="request-quote.php">Request a Quote</a></li>
+
       </ul>
     </div>
 
@@ -37,13 +39,14 @@
     <div class="footer-col">
       <h4>Contact Info</h4>
       <p>Email: info@arakwood.com</p>
-      <p>Phone: +971 55 841 0400</p>
+      <p>Phone: +971 55 9610 114</p>
+       <p>Phone: +971 55 9881154</p>
       <p>Location: Sharjah, UAE</p>
       <br>
-        <h3>Working Hours</h3>
-          <p>Monday - Thursday: 8:00 AM - 6:00 PM</p>
+      <h3>Working Hours</h3>
+          <p>Monday - Thursday: 8:00 AM - 01:00 PM / 02:00PM - 06:00 PM</p>
           <p>Friday: Closed</p>
-          <p> Saturday + Sunday: 9:00AM - 04:00 PM </P>
+          <p> Saturday + Sunday:  8:00 AM - 01:00 PM / 02:00PM - 06:00 PM</p>
     </div>
 
   </div>

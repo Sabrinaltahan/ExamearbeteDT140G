@@ -1,7 +1,3 @@
-.footer-logo{
-    width: 120px;
-    filter: brightness(0) invert(1);
-}
 :root {
   --primary-color: #9B3A3A;
   --primary-dark: #7E2D2D;
@@ -73,6 +69,7 @@ html {
 
 .nav-links a:hover {
   color: var(--primary-dark);
+  font-size: 20px;
 }
 
 .header-btn {
@@ -878,10 +875,10 @@ img {
   color:#9B3A3A;
 }
 
-
-/* products section style*/
+ 
+/* products section style */
 .home-products-section {
-  padding: 30px 0;
+  padding: 15px 0;
   background: #fff;
 }
 
@@ -976,7 +973,7 @@ img {
 }
 
 .footer-col a:hover {
-  color: var(--primary-color);
+  color: black;
 }
 
 
@@ -1045,11 +1042,6 @@ img {
   margin-bottom: 15px;
   filter: brightness(0) invert(1);
 }
-
-
-
-
-
 
 /*contact page style */
 .contact-page {
@@ -1148,7 +1140,6 @@ img {
 
 
 
-/* quote page style */
 /* request quote page style */
 .quote-page {
   padding: 100px 0;
@@ -1397,7 +1388,6 @@ admin-action-btn{
 
 
 /* about page style */
-/* ================= ABOUT PAGE ================= */
 
 .about-page {
   padding: 60px 0 30px;
@@ -1466,7 +1456,7 @@ admin-action-btn{
   display: block;
 }
 
-/* ================= VALUES SECTION ================= */
+/*------ VALUES SECTION -------- */
 
 .values-section {
   padding: 35px 0 25px;
@@ -1567,7 +1557,7 @@ admin-action-btn{
   transform: scale(1.08);
 }
 
-/* ================= RESPONSIVE ================= */
+/* ------- RESPONSIVE -----*/
 
 @media (max-width: 992px) {
   .about-block,
@@ -1796,7 +1786,7 @@ admin-action-btn{
 
 /* logo footer style*/
 .site-footer .footer-logo {
-  width: 85px !important;
+  width: 60px !important;
   height: auto !important;
   max-height: none !important;
   object-fit: contain !important;
@@ -1815,4 +1805,64 @@ admin-action-btn{
     top: 0;
     z-index: 999;
     background: white;
+}
+
+/* Popup Background */
+.image-popup{
+  position: fixed;
+  inset: 0;
+
+  background: rgba(0,0,0,0.92);
+
+  display: none;
+  justify-content: center;
+  align-items: center;
+
+  z-index: 99999;
+
+  padding: 30px;
+}
+
+/* Popup Image */
+.image-popup img{
+  max-width: 90%;
+  max-height: 90vh;
+
+  border-radius: 18px;
+
+  object-fit: contain;
+
+  animation: zoomIn 0.3s ease;
+}
+
+/* Close Button */
+.close-popup{
+  position: absolute;
+  top: 25px;
+  right: 35px;
+
+  color: #fff;
+
+  font-size: 45px;
+  cursor: pointer;
+}
+
+/* Cursor */
+.gallery-item img{
+  cursor: pointer;
+}
+
+/* Animation */
+@keyframes zoomIn{
+
+  from{
+    transform: scale(0.8);
+    opacity: 0;
+  }
+
+  to{
+    transform: scale(1);
+    opacity: 1;
+  }
+
 }

@@ -5,6 +5,9 @@
   <meta name="description" content="ARAK Wood provides CNC cutting, veneer solutions, custom woodwork and interior design services in UAE.">
   <title>ARAK Wood</title>
 
+  <!----favicon link----->
+  <link rel="icon" href="assets/images/favicon.png" type="image/png">
+
    <!------icons link------->
  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
   

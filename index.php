@@ -119,7 +119,7 @@ include("includes/header.php");
       <!-- Service 1 -->
       <a href="services.php#cnc-cutting" class="service-card scroll-left">
 
-        <img src="assets/images/service1.jpg" alt="CNC Cutting">
+        <img src="assets/images/cnc-cutting.jpg" alt="CNC Cutting">
 
         <div class="service-card-content">
           <h3>CNC Cutting</h3>
@@ -130,7 +130,7 @@ include("includes/header.php");
       <!-- Service 2 -->
       <a href="services.php#laser-cutting" class="service-card scroll-right">
 
-        <img src="assets/images/service2.jpg" alt="Laser Cutting">
+        <img src="assets/images/laser-cutting.jpg" alt="Laser Cutting">
 
         <div class="service-card-content">
           <h3>Laser Cutting</h3>
@@ -141,7 +141,7 @@ include("includes/header.php");
       <!-- Service 3 -->
       <a href="services.php#pressing-services" class="service-card scroll-left">
 
-        <img src="assets/images/service3.jpg" alt="Pressing Services">
+        <img src="assets/images/pressing-services.jpg" alt="Pressing Services">
 
         <div class="service-card-content">
           <h3>Pressing Services</h3>
@@ -152,7 +152,7 @@ include("includes/header.php");
       <!-- Service 4 -->
       <a href="services.php#sanding-calibrating" class="service-card scroll-right">
 
-        <img src="assets/images/service4.jpg" alt="Sanding & Calibrating">
+        <img src="assets/images/sanding-calibrating.jpg" alt="Sanding & Calibrating">
 
         <div class="service-card-content">
           <h3>Sanding & Calibrating</h3>
