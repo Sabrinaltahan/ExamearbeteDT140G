@@ -164,13 +164,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
         required
       ><?php echo htmlspecialchars($description); ?></textarea>
 
-      <input 
-        type="text" 
-        name="wood_type" 
-        placeholder="Wood Type" 
-        value="<?php echo htmlspecialchars($wood_type); ?>" 
-        required
-      >
+  
 
       <select name="status" required>
         <option value="">Select Status</option>
@@ -182,8 +176,8 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
         <option value="">Select Service</option>
         <option value="CNC Cutting" <?php if ($service === "CNC Cutting") echo "selected"; ?>>CNC Cutting</option>
         <option value="Laser Cutting" <?php if ($service === "Laser Cutting") echo "selected"; ?>>Laser Cutting</option>
-        <option value="Press Service" <?php if ($service === "Press Service") echo "selected"; ?>>Press Service</option>
-        <option value="Custom Design" <?php if ($service === "Custom Design") echo "selected"; ?>>Custom Design</option>
+        <option value="Pressing Service" <?php if ($service === "Pressing Service") echo "selected"; ?>>Pressing Service</option>
+        <option value="Sanding" <?php if ($service === "Sanding") echo "selected"; ?>>Sanding</option>
       </select>
 
       <label class="file-label">Upload Product Image</label>

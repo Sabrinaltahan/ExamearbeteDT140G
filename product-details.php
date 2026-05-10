@@ -73,11 +73,6 @@ if (!$product) {
         </div>
 
         <div class="product-info-item">
-          <strong>Wood Type:</strong>
-          <span><?php echo htmlspecialchars($product['wood_type'] ?: 'N/A'); ?></span>
-        </div>
-
-        <div class="product-info-item">
           <strong>Service:</strong>
           <span><?php echo htmlspecialchars($product['service'] ?: 'N/A'); ?></span>
         </div>

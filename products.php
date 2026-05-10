@@ -4,54 +4,32 @@ require_once 'db.php';
 include("includes/header.php");
 
 /* Filters */
-$serviceFilter = $_GET['service'] ?? '';
-$statusFilter = $_GET['status'] ?? '';
-$materialFilter = $_GET['material'] ?? '';
-$lippingFilter = $_GET['lipping'] ?? '';
-$veneerFilter = $_GET['veneer'] ?? '';
-$chipboardsFilter = $_GET['chipboards'] ?? '';
-$highPressureFilter = $_GET['high_pressure'] ?? '';
+$categoryFilter = $_GET['category'] ?? '';
+$serviceFilter  = $_GET['service'] ?? '';
+$statusFilter   = $_GET['status'] ?? '';
 
-/* Query */
 $limit = 10;
 $offset = 0;
 
 $sql = "SELECT * FROM products WHERE 1=1";
 $params = [];
 
+/* Category filter */
+if ($categoryFilter) {
+    $sql .= " AND category = ?";
+    $params[] = $categoryFilter;
+}
+
+/* Service filter */
 if ($serviceFilter) {
     $sql .= " AND service = ?";
     $params[] = $serviceFilter;
 }
 
+/* Status filter */
 if ($statusFilter) {
     $sql .= " AND status = ?";
     $params[] = $statusFilter;
-}
-
-if ($materialFilter) {
-    $sql .= " AND material = ?";
-    $params[] = $materialFilter;
-}
-
-if ($lippingFilter) {
-    $sql .= " AND lipping = ?";
-    $params[] = $lippingFilter;
-}
-
-if ($veneerFilter) {
-    $sql .= " AND veneer = ?";
-    $params[] = $veneerFilter;
-}
-
-if ($chipboardsFilter) {
-    $sql .= " AND chipboards = ?";
-    $params[] = $chipboardsFilter;
-}
-
-if ($highPressureFilter) {
-    $sql .= " AND high_pressure = ?";
-    $params[] = $highPressureFilter;
 }
 
 $sql .= " ORDER BY created_at DESC LIMIT $limit OFFSET $offset";
@@ -72,47 +50,26 @@ $products = $stmt->fetchAll(PDO::FETCH_ASSOC);
     <!-- Filters -->
     <form method="GET" class="products-filter">
 
-      <select name="service">
-        <option value="">All Services</option>
-        <option value="CNC Cutting" <?= $serviceFilter=="CNC Cutting"?"selected":"" ?>>CNC Cutting</option>
-        <option value="Laser Cutting" <?= $serviceFilter=="Laser Cutting"?"selected":"" ?>>Laser Cutting</option>
-        <option value="Pressing Services" <?= $serviceFilter=="Pressing Services"?"selected":"" ?>>Pressing</option>
-        <option value="Sanding & Calibrating" <?= $serviceFilter=="Sanding & Calibrating"?"selected":"" ?>>Sanding</option>
+      <select name="category">
+        <option value="">All Categories</option>
+        <option value="Veneer" <?= $categoryFilter == "Veneer" ? "selected" : "" ?>>Veneer</option>
+        <option value="Chipboard" <?= $categoryFilter == "Chipboard" ? "selected" : "" ?>>Chipboard</option>
+        <option value="Lipping" <?= $categoryFilter == "Lipping" ? "selected" : "" ?>>Lipping</option>
+        <option value="High Pressure" <?= $categoryFilter == "High Pressure" ? "selected" : "" ?>>High Pressure</option>
       </select>
 
       <select name="status">
-        <option value="">Status</option>
-        <option value="Available" <?= $statusFilter=="Available"?"selected":"" ?>>Available</option>
-        <option value="Sold" <?= $statusFilter=="Sold"?"selected":"" ?>>Sold</option>
+        <option value="">All Status</option>
+        <option value="Available" <?= $statusFilter == "Available" ? "selected" : "" ?>>Available</option>
+        <option value="Sold" <?= $statusFilter == "Sold" ? "selected" : "" ?>>Sold</option>
       </select>
 
-      <select name="material">
-        <option value="">Material</option>
-        <option value="Wood" <?= $materialFilter=="Wood"?"selected":"" ?>>Wood</option>
-        <option value="MDF" <?= $materialFilter=="MDF"?"selected":"" ?>>MDF</option>
-      </select>
-
-      <select name="lipping">
-        <option value="">Lipping</option>
-        <option value="Yes" <?= $lippingFilter=="Yes"?"selected":"" ?>>Yes</option>
-        <option value="No" <?= $lippingFilter=="No"?"selected":"" ?>>No</option>
-      </select>
-
-      <select name="veneer">
-        <option value="">Veneer</option>
-        <option value="Natural Veneer" <?= $veneerFilter=="Natural Veneer"?"selected":"" ?>>Natural</option>
-        <option value="Recon Veneer" <?= $veneerFilter=="Recon Veneer"?"selected":"" ?>>Recon</option>
-      </select>
-
-      <select name="chipboards">
-        <option value="">Chipboards</option>
-        <option value="Yes" <?= $chipboardsFilter=="Yes"?"selected":"" ?>>Yes</option>
-        <option value="No" <?= $chipboardsFilter=="No"?"selected":"" ?>>No</option>
-      </select>
-
-      <select name="high_pressure">
-        <option value="">High Pressure</option>
-        <option value="HPL" <?= $highPressureFilter=="HPL"?"selected":"" ?>>HPL</option>
+      <select name="service">
+        <option value="">All Services</option>
+        <option value="CNC" <?= $serviceFilter == "CNC" ? "selected" : "" ?>>CNC</option>
+        <option value="Laser" <?= $serviceFilter == "Laser" ? "selected" : "" ?>>Laser</option>
+        <option value="Pressing" <?= $serviceFilter == "Pressing" ? "selected" : "" ?>>Pressing</option>
+        <option value="Sanding" <?= $serviceFilter == "Sanding" ? "selected" : "" ?>>Sanding</option>
       </select>
 
       <button type="submit">Filter</button>
@@ -120,17 +77,18 @@ $products = $stmt->fetchAll(PDO::FETCH_ASSOC);
 
     </form>
 
-
-
     <!-- Products -->
     <div class="products-grid">
 
       <?php if ($products): ?>
         <?php foreach ($products as $product): ?>
-          
+
           <div class="product-item">
             <a href="product-details.php?id=<?= $product['id'] ?>">
-              <img src="assets/images/<?= htmlspecialchars($product['image']) ?>">
+              <img 
+                src="assets/images/<?= htmlspecialchars($product['image']) ?>" 
+                alt="<?= htmlspecialchars($product['name']) ?>"
+              >
             </a>
 
             <h3><?= htmlspecialchars($product['name']) ?></h3>
@@ -138,14 +96,14 @@ $products = $stmt->fetchAll(PDO::FETCH_ASSOC);
 
         <?php endforeach; ?>
       <?php else: ?>
-        <p>No products found</p>
+        <p class="no-products">No products found</p>
       <?php endif; ?>
 
     </div>
 
     <div class="load-more-wrapper">
-  <button id="loadMoreBtn">Load More</button>
-</div>
+      <button id="loadMoreBtn">Load More</button>
+    </div>
 
   </div>
 </section>

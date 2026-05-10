@@ -167,6 +167,8 @@ img {
   }
 }
 
+
+
 /* Hero section style */
 .hero {
   position: relative;
@@ -1666,6 +1668,11 @@ admin-action-btn{
   box-shadow: 0 6px 18px rgba(0,0,0,0.08);
   transition: 0.3s ease;
 }
+.product-item img{
+    width: 100%;
+    height: 260px;
+    object-fit: cover;
+}
 
 .product-item img:hover {
   transform: scale(1.04);
@@ -1799,4 +1806,13 @@ admin-action-btn{
   padding: 0 !important;
   margin-bottom: 15px;
   filter: none !important;
+}
+
+
+/* sticky header style */
+.site-header{
+    position: sticky;
+    top: 0;
+    z-index: 999;
+    background: white;
 }
