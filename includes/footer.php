@@ -5,7 +5,7 @@
 
     <!-- Company Info -->
     <div class="footer-col">
-      <img src="assets/images/logo.png" alt="ARAK Wood Logo" class="footer-logo">
+      <img src="assets/images/logo.png?v=2" alt="ARAK Wood Logo" class="footer-logo">
       <h3>ARAK Wood</h3>
       <p>
         We provide custom woodwork, furniture solutions, CNC cutting, and interior design services

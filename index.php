@@ -26,56 +26,59 @@ include("includes/header.php");
 
 
 
-   <!-- Recent Projects -->
-  <section class="recent-projects-modern" id="projects">
-    <div class="projects-wrapper">
-      <button class="scroll-btn left" id="scrollLeft">&#10094;</button>
+<!-- Recent Projects -->
+<section class="recent-projects-modern" id="projects">
+  <div class="projects-wrapper">
 
-      <div class="projects-row" id="projectsRow">
-        <a href="project-details.php?id=1" class="project-modern-card scroll-animate">
-          <img src="assets/images/project1.jpg" alt="Modern Kitchen">
-          <div class="project-modern-overlay">
-            <h3>Modern Kitchen</h3>
-          </div>
-        </a>
+    <button class="scroll-btn left" id="scrollLeft">&#10094;</button>
 
-        <a href="project-details.php?id=2" class="project-modern-card scroll-animate">
-          <img src="assets/images/project2.jpg" alt="Bedroom Interior">
-          <div class="project-modern-overlay">
-            <h3>Bedroom Interior</h3>
-          </div>
-        </a>
+    <div class="projects-row" id="projectsRow">
 
-        <a href="project-details.php?id=3" class="project-modern-card scroll-animate">
-          <img src="assets/images/project3.jpg" alt="Office Solutions">
-          <div class="project-modern-overlay">
-            <h3>Office Solutions</h3>
-          </div>
-        </a>
+      <a href="project-details.php?category=kitchen" class="project-modern-card scroll-animate">
+        <img src="assets/images/kitchen4.jpg" alt="Modern Kitchen">
+        <div class="project-modern-overlay">
+          <h3>Modern Kitchen</h3>
+        </div>
+      </a>
 
-        <a href="project-details.php?id=4" class="project-modern-card scroll-animate">
-          <img src="assets/images/project4.jpg" alt="CNC Design">
-          <div class="project-modern-overlay">
-            <h3>CNC Design</h3>
-          </div>
-        </a>
+      <a href="project-details.php?category=bedroom" class="project-modern-card scroll-animate">
+        <img src="assets/images/bedroom2.jpg" alt="Bedroom Interior">
+        <div class="project-modern-overlay">
+          <h3>Bedroom Interior</h3>
+        </div>
+      </a>
 
-        <a href="project-details.php?id=5" class="project-modern-card scroll-animate">
-          <img src="assets/images/project5.jpg" alt="Wood Display">
-          <div class="project-modern-overlay">
-            <h3>Wood Display</h3>
-          </div>
-        </a>
-      </div>
+      <a href="project-details.php?category=office" class="project-modern-card scroll-animate">
+        <img src="assets/images/office3.jpg" alt="Office Solutions">
+        <div class="project-modern-overlay">
+          <h3>Office Solutions</h3>
+        </div>
+      </a>
 
-      <button class="scroll-btn right" id="scrollRight">&#10095;</button>
+      <a href="project-details.php?category=cnc" class="project-modern-card scroll-animate">
+        <img src="assets/images/cnc1.jpg" alt="CNC Design">
+        <div class="project-modern-overlay">
+          <h3>CNC Design</h3>
+        </div>
+      </a>
+
+      <a href="project-details.php?category=display" class="project-modern-card scroll-animate">
+        <img src="assets/images/display3.jpg" alt="Wood Display">
+        <div class="project-modern-overlay">
+          <h3>Wood Display</h3>
+        </div>
+      </a>
+
     </div>
-  </section>
+
+    <button class="scroll-btn right" id="scrollRight">&#10095;</button>
+
+  </div>
+</section>
 
 
 
    <!------wood features section------->
-  <!-- FEATURES -->
 <section class="features-section">
   <div class="container">
 
@@ -179,7 +182,7 @@ include("includes/header.php");
         <div class="why-icon">
           <i class="fa-solid fa-medal"></i>
         </div>
-        <h3>High Quality</h3>
+        <h3><a href="about.php">High Quality</a></h3>
         <p>Durable materials, precise finishing, and professional woodwork in every project.</p>
       </div>
 
@@ -187,7 +190,7 @@ include("includes/header.php");
         <div class="why-icon">
           <i class="fa-solid fa-pen-ruler"></i>
         </div>
-        <h3>Custom Solutions</h3>
+        <h3><a href="about.php">Custom Solutions</a></h3>
         <p>Tailored designs created to match each client’s needs, style, and project requirements.</p>
       </div>
 
@@ -195,13 +198,14 @@ include("includes/header.php");
         <div class="why-icon">
           <i class="fa-solid fa-users-gear"></i>
         </div>
-        <h3>Experienced Team</h3>
+        <h3><a href="about.php">Experienced Team</a></h3>
         <p>Practical experience in furniture, CNC work, interior wood design, and finishing.</p>
       </div>
 
 
     </div>
   </div>
+
 </section>
 
 

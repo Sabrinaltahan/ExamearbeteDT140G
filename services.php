@@ -62,7 +62,7 @@ include("includes/header.php");
     </section>
 
     <!-- Pressing Service -->
-    <section class="service-detail-block" id="press-service">
+    <section class="service-detail-block" id="pressing-services">
       <div class="service-detail-image">
         <img src="assets/images/service3.jpg" alt="Press Service">
       </div>
@@ -84,7 +84,7 @@ include("includes/header.php");
     </section>
 
     <!-- Custom Design -->
-    <section class="service-detail-block reverse" id="custom-design">
+    <section class="service-detail-block reverse" id="sanding-calibrating">
       <div class="service-detail-image">
         <img src="assets/images/service4.jpg" alt="Custom Design">
       </div>
