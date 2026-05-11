@@ -42,10 +42,6 @@ if (!$product) {
           <span><?php echo htmlspecialchars($product['category']); ?></span>
         <?php endif; ?>
 
-        <?php if (!empty($product['wood_type'])): ?>
-          <span><?php echo htmlspecialchars($product['wood_type']); ?></span>
-        <?php endif; ?>
-
         <?php if (!empty($product['service'])): ?>
           <span><?php echo htmlspecialchars($product['service']); ?></span>
         <?php endif; ?>

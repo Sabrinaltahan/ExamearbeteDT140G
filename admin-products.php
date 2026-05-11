@@ -112,7 +112,6 @@ $products = $stmt->fetchAll(PDO::FETCH_ASSOC);
             <th>Image</th>
             <th>Name</th>
             <th>Category</th>
-            <th>Wood</th>
             <th>Status</th>
             <th>Service</th>
             <th>Description</th>
@@ -144,7 +143,6 @@ $products = $stmt->fetchAll(PDO::FETCH_ASSOC);
                 <!-- البيانات -->
                 <td><?php echo htmlspecialchars($product['name']); ?></td>
                 <td><?php echo htmlspecialchars($product['category'] ?? ''); ?></td>
-                <td><?php echo htmlspecialchars($product['wood_type'] ?? ''); ?></td>
                 <td><?php echo htmlspecialchars($product['status'] ?? ''); ?></td>
                 <td><?php echo htmlspecialchars($product['service'] ?? ''); ?></td>
                 <td><?php echo htmlspecialchars($product['description']); ?></td>
